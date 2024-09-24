@@ -10,16 +10,57 @@
         @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
         </style>
 </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewegendes Schriftbanner</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
 
+        .banner-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .banner {
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            padding: 0px;
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-container">
+        <div class="banner">Bienvenido a mi sitio web - esta página está en construcción!</div>
+    </div>
+
+</body>
 <body>
     <!-- Contenedor principal -->
     <main>
 
         <!-- Título principal -->
         <div class="title">
-            <h1>IE 2024
-                
-            </h1>
+        <h1>IE 2024</h1>
+        <h2>Mi nombre es Nicola Roner y soy intercambio<br>
+            de arquitectura de la PUCV EAD</h2>
         </div>
 
         <!-- Contenedor lado izquierdo de la página -->
@@ -29,12 +70,17 @@
             <div class="content">
 
                 <!-- párrafo -->
-                <p>This is my Website for the Taller Imagen Escrito</p>
+                
 
-                <p>Welcome! I hope you enjoy</p>
+                <p> En esta página podran observar mis trabajos
+                    de la asignatura Imagen Escrita,<br>
+                    que se centra en la intersección entre diseño, 
+                    programación y arte generativo</p>
+
+                <p>.....</p>
 
                 <!-- botón -->
-                <a href="https://enlace-a-la-wiki.com" target="_blank">
+                <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024" target="blank">
                     <button>Ver proyecto en la wiki</button>
                 </a>
 
@@ -42,7 +88,7 @@
         </div>
 
         <!-- Contenedor lado derecho de la página -->
-        <div id="right">
+        <div id="centra">
 
             <!--Contenedor proyectos-->
             <div class="proyectos">
@@ -50,32 +96,39 @@
                 <nav>
 
                     <!--imagenes con enlace a sketch-->
+                    <p>PRIMER ENCARGO //<br>
+
+                        Consiste en una composición abstracta inspirada en las obras de Vera Molnár, 
+                        donde se utilizaban diversas formas y múltiples colores dinámicos. 
+                        Este primer diseño fue realizado con las funciones más básicas de p5.js,
+                        con distintas formas, lineas, colores, rellenos etc.</p>
                     <a href="https://editor.p5js.org/Nicci500/sketches/m_zYS8aHP" target="_blank">
                         <img src="IMG/Tarea 1.png"> sketch 1
                     </a>
+                    <p>SEGUNDO ENCARGO //<br>
+
+                        Consistió en realizar un sketch donde se incorporan las variables, 
+                        las condicionales y los bucles, Creando asi una animación constante.</p>
                     <a href="https://editor.p5js.org/Nicci500/sketches/Sr85LZG9T" target="_blank">
                         <img src="IMG/Tarea 2.png"> sketch 2
                     </a>
-                    <a href="Proyectos/tarea 3/" target="_blank">
-                        <img src="img/img1.png"> sketch 3
+                    <p>TERCER ENCARGO //<br>
+
+                        Consistió en crear una composición visual animada que utilizara 
+                        transformaciones geométricas para generar un patrón complejo o un 
+                        sistema de movimiento. Experimentando asi la combinación de diferentes 
+                        transformaciones y sistemas de coordenadas para lograr efectos visuales impactantes.</p>
+                    <a href="https://editor.p5js.org/Nicci500/sketches/P6QmGnwgq" target="_blank">
+                        <img src="IMG/Tarea 3.png"> sketch 3
                     </a>
-                    <a href="Proyectos/tarea 4/Orchid_taleggio_2024_09_12_12_17_33/index.html" target="_blank">
-                        <img src="IMG/Squers.png"> sketch 4
+                    <p>CUARTO ENCARGO //<br>
+
+                        Se genero un patrón recursivo, en el que habia que implementar algún 
+                        tipo de interacción con el mouse que a la vez provocaba una animación.</p>
+                    <a href="https://editor.p5js.org/Nicci500/sketches/hT3VHmrXX" target="_blank">
+                        <img src="IMG/Tarea 4.png"> sketch 4
                     </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 5
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 6
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 7
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 8
-                    </a>
-                    <a href="https://www.ejemplo.com" target="_blank">
-                        <img src="img/img1.png"> sketch 9
+                   
                     </a>
                 </nav>
 
